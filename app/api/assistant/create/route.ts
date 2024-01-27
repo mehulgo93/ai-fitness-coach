@@ -5,7 +5,7 @@ export async function POST() {
   const openai = new OpenAI();
 
   try {
-    const assitant = await openai.beta.assistants.create({
+    const assistant = await openai.beta.assistants.create({
       model: "gpt-4",
       name: "Goggins AI Coach",
       instructions: `
@@ -35,9 +35,9 @@ export async function POST() {
       `,
     });
 
-    console.log(assitant);
+    console.log(assistant);
 
-    return NextResponse.json({ assitant }, { status: 201 });
+    return NextResponse.json({ assistant }, { status: 201 });
   } catch (error) {
     console.error(error);
     return NextResponse.json({ error: error }, { status: 500 });
