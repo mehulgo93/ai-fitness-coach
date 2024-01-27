@@ -28,6 +28,7 @@
     "react-hot-toast": "^2.4.1",
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7",
+    "update": "^0.7.4",
     "web-push": "^3.6.7"
   },
   "devDependencies": {
